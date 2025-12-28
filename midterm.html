@@ -632,7 +632,7 @@
             <div class="tiny">
               Sliders show <b>R − D</b> margin (negative = Dem, positive = GOP) and an uncertainty band.<br/><br/>
               Components:
-              <b>Generic Ballot (35x)</b>, <b>Polls (50x)</b>, <b>National  (15x)</b>, then the weighted <b>Result</b>.<br/><br/>
+              <b>Generic Ballot (35x)</b>, <b>Polls (50x)</b>, <b>National Indicators (15x)</b>, then the weighted <b>Result</b>.<br/><br/>
               Win probability uses an internal <b>10pt</b> error scale (not displayed).
             </div>
           </div>
@@ -879,7 +879,7 @@ function computeIndicatorNationalFromPolls(modeKey){
   avg.D /= implied.length; avg.R /= implied.length;
   return normalizePair(avg.D, avg.R);
 }
-function computetate(indNat, ratio){
+function computeIndicatorState(indNat, ratio){
   return normalizePair(indNat.D * ratio.D, indNat.R * ratio.R);
 }
 function weightedCombine(components){

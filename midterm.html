@@ -589,8 +589,7 @@
         <div class="barActions">
           <div class="chip" id="chipMode"><span class="dot ok"></span><strong>Senate</strong></div>
           <div class="chip"><span class="dot"></span>Generic ballot: <strong id="chipGBText">—</strong></div>
-          <div class="chip"><span class="dot"></span>Races loaded: <strong id="chipRacesText">—</strong></div>
-        </div>
+          
       </div>
     </div>
 
@@ -619,36 +618,6 @@
 
           <div class="seatFooter" id="seatFooterText">—</div>
         </section>
-
-        <section class="card">
-          <div class="cardTitleRow">
-            <div class="cardTitle">
-              <div class="h">How to read this</div>
-              <div class="sub">Hover a state for the four sliders</div>
-            </div>
-          </div>
-
-          <div class="cardInner">
-            <div class="tiny">
-              Sliders show <b>R − D</b> margin (negative = Dem, positive = GOP) and an uncertainty band.<br/><br/>
-              Components:
-              <b>Generic Ballot (35x)</b>, <b>Polls (50x)</b>, <b>National Indicators (15x)</b>, then the weighted <b>Result</b>.<br/><br/>
-              Win probability uses an internal <b>10pt</b> error scale (not displayed).
-            </div>
-          </div>
-        </section>
-
-        <section class="card" id="statusCard">
-          <div class="cardTitleRow">
-            <div class="cardTitle">
-              <div class="h">Data status</div>
-              <div class="sub">Loaded from CSV next to this HTML</div>
-            </div>
-          </div>
-          <div class="cardInner" id="statusBody">
-            <div class="tiny">Loading <span class="mono">entries_all.csv</span>…</div>
-          </div>
-        </section>
       </aside>
 
       <main style="display:flex;flex-direction:column;gap:14px;">
@@ -672,7 +641,7 @@
         </section>
       </main>
     </div>
-  </div>
+ </div> 
 
   <div id="tip" role="dialog" aria-label="State details tooltip">
     <div class="tipTop">
